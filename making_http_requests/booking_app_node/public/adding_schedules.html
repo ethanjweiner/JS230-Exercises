@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      dl {
+        border: 3px double #ccc;
+        padding: 0.5em;
+      }
+      dt {
+        float: left;
+        clear: left;
+        width: 100px;
+        text-align: right;
+        font-weight: bold;
+        color: #f0595b;
+      }
+      dt::after {
+        content: ':';
+      }
+      dd {
+        margin: 0 0 0 110px;
+        padding: 0 0 0.5em 0;
+      }
+
+      button {
+        border-radius: 5px;
+        width: 100px;
+        height: 50px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      button[type='submit'] {
+        background: #f0595b;
+        border-color: #f0595b;
+      }
+
+      button.add-more {
+        background: teal;
+        border-color: teal;
+      }
+
+      h1 {
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="add-more">Add more schedules</button>
+    <form action="/api/schedules">
+      <div class="schedules">
+        <!-- Insert schedules here -->
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <!-- <script src="./javascripts/schedule_template.js" type="module"></script> -->
+    <script src="./javascripts/adding_schedules.js" type="module"></script>
+  </body>
+</html>

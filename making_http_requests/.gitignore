@@ -1,0 +1,8 @@
+booking_app_node/*
+!booking_app_node/public
+
+booking_app_node/public/*
+!booking_app_node/public/javascripts
+
+!booking_app_node/public/*.html
+booking_app_node/public/index.html

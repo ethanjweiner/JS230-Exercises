@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Time Slots</title>
+    <style>
+      dt,
+      dd {
+        display: inline;
+      }
+      dd {
+        margin-left: 0;
+      }
+      .student-form {
+        background-color: rgb(207, 207, 207);
+        padding: 25px;
+      }
+      .hidden {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="booking-form" action="/api/bookings" method="post">
+      <h1>Schedules</h1>
+      <dl>
+        <dt><label for="id">Please select one schedule </label></dt>
+        <dd>
+          <select name="id" id="id">
+            <!-- Insert available schedules here -->
+          </select>
+        </dd>
+      </dl>
+      <dl>
+        <dt><label for="student_email">Email: </label></dt>
+        <dd><input type="text" name="student_email" id="student_email" /></dd>
+        <button type="submit">Submit</button>
+      </dl>
+    </form>
+
+    <!-- Invisible on page load -->
+    <form class="student-form hidden" action="/api/students">
+      <h1>Please provide new student details</h1>
+      <dl>
+        <dt><label for="email">Email: </label></dt>
+        <dd>
+          <input type="text" name="email" id="email" />
+        </dd>
+      </dl>
+      <dl>
+        <dt><label for="name">Name: </label></dt>
+        <dd><input type="text" name="name" id="name" /></dd>
+      </dl>
+      <dl>
+        <dt><label for="booking_sequence">Booking Sequence</label></dt>
+        <dd>
+          <input type="text" name="booking_sequence" id="booking_sequence" />
+        </dd>
+      </dl>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="./javascripts/booking_time_slots.js" type="module"></script>
+  </body>
+</html>
