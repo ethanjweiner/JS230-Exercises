@@ -1,0 +1,43 @@
+body {
+  background: purple;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+figure {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  padding: 15px;
+  margin: 0;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+
+figure img {
+  border: 10px solid white;
+  border-radius: 10px;
+  width: 100%;
+}
+
+figure figcaption {
+  position: absolute;
+  width: 250px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 5;
+  opacity: 0;
+  transition: 1s opacity ease;
+}
+
+.active {
+  opacity: 1;
+}
