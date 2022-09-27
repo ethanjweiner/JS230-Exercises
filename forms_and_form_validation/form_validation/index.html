@@ -1,0 +1,109 @@
+<head>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Sign Up Form</h1>
+    <form action="#" novalidate>
+      <p class="error"></p>
+      <dl>
+        <dt>
+          <label for="first-name">First Name</label>
+        </dt>
+        <dd>
+          <input
+            type="text"
+            name="first-name"
+            data-key-pattern="[a-zA-Z'\s]"
+            required
+          />
+          <span class="error"></span>
+        </dd>
+        <dt>
+          <label for="last-name">Last Name</label>
+        </dt>
+        <dd>
+          <input
+            type="text"
+            name="last-name"
+            data-key-pattern="[a-zA-Z'\s]"
+            required
+          />
+          <span class="error"></span>
+        </dd>
+        <dt>
+          <label for="email">Email</label>
+        </dt>
+        <dd>
+          <input
+            type="email"
+            name="email"
+            placeholder="someone@example.com"
+            required
+            pattern=".+@.+"
+          />
+          <span class="error"></span>
+        </dd>
+
+        <dt>
+          <label for="password">Password</label>
+        </dt>
+        <dd>
+          <input type="password" name="password" required pattern=".{10,}" />
+          <span class="error"></span>
+        </dd>
+        <dt>
+          <label for="phone-number">Phone Number</label>
+        </dt>
+        <dd>
+          <input
+            type="tel"
+            name="phone-number"
+            placeholder="111-222-333"
+            pattern="\d{3}-\d{3}-\d{4}"
+            data-key-pattern="[\d-]"
+          />
+          <span class="error"></span>
+        </dd>
+        <dt>
+          <label for="credit-card">Credit Card</label>
+        </dt>
+        <dd>
+          <input
+            type="number"
+            name="credit-card"
+            id="cd1"
+            maxlength="4"
+            data-key-pattern="\d"
+          />
+          -
+          <input
+            type="number"
+            name="credit-card"
+            id="cd2"
+            maxlength="4"
+            data-key-pattern="\d"
+          />
+          -
+          <input
+            type="number"
+            name="credit-card"
+            id="cd3"
+            maxlength="4"
+            data-key-pattern="\d"
+          />
+          -
+          <input
+            type="number"
+            name="credit-card"
+            id="cd4"
+            maxlength="4"
+            data-key-pattern="\d"
+          />
+        </dd>
+      </dl>
+      <button type="submit">Sign Up</button>
+    </form>
+  </main>
+  <script src="./form_validation.js"></script>
+</body>

@@ -1,0 +1,53 @@
+body {
+  background: green;
+}
+
+main {
+  width: 500px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+h1 {
+  color: white;
+}
+
+form {
+  width: 100%;
+  padding: 10px;
+  background: white;
+}
+
+input {
+  font-size: 20px;
+  width: 300px;
+}
+
+input[name="credit-card"] {
+  display: inline-block;
+  width: 65px;
+}
+
+input:focus {
+  border: 1px solid green;
+  outline: 0;
+}
+
+input.error {
+  border: 1px solid red;
+  outline: 0;
+}
+
+dd {
+  margin-left: 0;
+}
+
+button {
+  background: green;
+  color: white;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+}
